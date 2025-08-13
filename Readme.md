@@ -1,4 +1,4 @@
-# Личный проект «Sedona»
+# Личный проект «Sedona» https://vvv1299.github.io/sedona/
 
 * Студент: [Валерия Набиуллина](https://htmlacademy.ru/profile/id955563).
 * Наставник: `Неизвестно`.
