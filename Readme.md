@@ -1,6 +1,6 @@
-# Личный проект «{{projectTitle}}»
+# Личный проект «Sedona»
 
-* Студент: [{{userName}}]({{userProfile}}).
+* Студент: [Валерия Набиуллина](https://htmlacademy.ru/profile/id955563).
 * Наставник: `Неизвестно`.
 
 ---
