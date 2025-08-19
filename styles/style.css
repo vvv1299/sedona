@@ -7,13 +7,13 @@
 }
 
 .page-index-head {
-  background-image: url(../images/welcome_to_sedona.jpg);
+  background-image: url(../images/background/welcome_to_sedona.jpg);
 }
 
 .subscribe {
-  background-image: url(../images/advantages_canyon-bluer.jpg);
+  background-image: url(../images/background/advantages_canyon-bluer.jpg);
 }
 
-.catalog-products-filtr {
-  background-image: url(../images/welcome_to_sedona-bluer.jpg);
+.inner-header {
+  background-image: url(../images/background/welcome_to_sedona-bluer.jpg);
 }

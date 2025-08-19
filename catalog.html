@@ -11,7 +11,7 @@
       <a class="page-header-logo-link" href="index.html"
         ><img
           class="page-header-logo"
-          src="images/logo.svg"
+          src="images/svg/logo.svg"
           width="367"
           height="152"
           alt="Логотип"
@@ -62,13 +62,15 @@
               class="visually-hidden"
               >Главная</a
             >
+            <img src="images/svg/home.svg" />
+          </li>
+          <li class="breadcrumbs-item">
+            <img src="images/svg/arrow.svg" />
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-      </header>
-      <section class="catalog-products">
         <div class="catalog-products-filtr">
           <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
           <form
@@ -168,20 +170,28 @@
             <button class="button-reset" type="reset">Сбросить</button>
           </form>
         </div>
+      </header>
+      <section class="catalog-products">
         <h2 class="search-result-title">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярное</option>
           <option value="min-price">Сначала дешёвое</option>
           <option value="max-price">Сначала дорогое</option>
         </select>
-        <div class="sort-by"><a href="catalog.html?view=tile" class="button button-light">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button" href="catalog.html?view=card">
-          <span class="visually-hidden">Показать карточки с описанием</span>
-        </a><a class="button" href="catalog.html?view=list">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <img src="images/svg/arrow-down.svg" />
+        <div class="sort-by">
+          <a href="catalog.html?view=tile" class="button button-light">
+            <span class="visually-hidden">Показать карточки</span>
+            <img src="images/svg/tile.svg" />
+          </a>
+          <a class="button" href="catalog.html?view=card">
+            <span class="visually-hidden">Показать карточки с описанием</span>
+            <img src="images/svg/card.svg" />
+          </a>
+          <a class="button" href="catalog.html?view=list">
+            <span class="visually-hidden">Показать список</span>
+            <img src="images/svg/list.svg" />
+          </a>
         </div>
         <!-- откорректировать под макет -->
         <ul class="product-list">
@@ -189,7 +199,7 @@
             <a class="product-card-link" href="product.html">
               <img
                 class="product-card-image"
-                src="images/hotel-Amara.jpg"
+                src="images/catalog/hotel-Amara.jpg"
                 width="220"
                 height="168"
                 alt=""
@@ -200,14 +210,16 @@
             <b class="product-card-price">От 4000 ₽</b>
             <a class="show more" href="#">Подробнеее</a>
             <button class="favorite" href="#">Избранное</button>
-            <p>Звезды</p>
+            <div class="stars">
+              <img src="images/svg/star.svg" />
+            </div>
             <p>Рейтинг: 8,5</p>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <img
                 class="product-card-image"
-                src="images/hotel-Villas.jpg"
+                src="images/catalog/hotel-Villas.jpg"
                 width="220"
                 height="168"
                 alt=""
@@ -218,14 +230,16 @@
             <b class="product-card-price">От 5000 ₽</b>
             <a class="show more" href="#">Подробнеее</a>
             <button class="favorite" href="#">Избранное</button>
-            <p>Звезды</p>
+            <div class="stars">
+              <img src="images/svg/star.svg" />
+            </div>
             <p>Рейтинг: 9,2</p>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <img
                 class="product-card-image"
-                src="images/hotel-Desert.jpg"
+                src="images/catalog/hotel-Desert.jpg"
                 width="220"
                 height="168"
                 alt=""
@@ -236,14 +250,16 @@
             <b class="product-card-price">От 2500 ₽</b>
             <a class="show more" href="#">Подробнеее</a>
             <button class="favorite" href="#">Избранное</button>
-            <p>Звезды</p>
+            <div class="stars">
+              <img src="images/svg/star.svg" />
+            </div>
             <p>Рейтинг: 6,9</p>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <img
                 class="product-card-image"
-                src="images/hotel-GreenTree.jpg"
+                src="images/catalog/hotel-GreenTree.jpg"
                 width="220"
                 height="168"
                 alt=""
@@ -254,7 +270,9 @@
             <b class="product-card-price">От 1500 ₽</b>
             <a class="show more" href="#">Подробнеее</a>
             <button class="favorite" href="#">Избранное</button>
-            <p>Звезды</p>
+            <div class="stars">
+              <img src="images/svg/star.svg" />
+            </div>
             <p>Рейтинг: 5,0</p>
           </li>
         </ul>
@@ -322,19 +340,19 @@
           <li class="footer-social-item">
             <a class="button" href="#">
               <span class="visually-hidden">Вконтакте</span>
-              <img src="images/icon-vk.svg" alt="" />
+              <img src="images/svg/icon-vk.svg" alt="" />
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="#">
               <span class="visually-hidden">Телеграм</span>
-              <img src="images/icon-telegram.svg" alt="" />
+              <img src="images/svg/icon-telegram.svg" alt="" />
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="#">
               <span class="visually-hidden">YuoTube</span>
-              <img src="images/icon-youtube.svg" alt="" />
+              <img src="images/svg/icon-youtube.svg" alt="" />
             </a>
           </li>
         </ul>
@@ -347,7 +365,7 @@
         href="https://htmlacademy.ru/intensive/htmlcss"
         ><img
           class="page-footer-logo"
-          src="images/logo-HTML.svg"
+          src="images/svg/logo-HTML.svg"
           width="187"
           height="24"
           alt="Логотип"
