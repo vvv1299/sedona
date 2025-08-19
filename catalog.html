@@ -144,46 +144,45 @@
 
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <form
+
+              <label for="catalog-form" class="visually-hidden">От</label>
+              <input
                 class="catalog-form"
-              >
-                <label for="catalog-form" class="visually-hidden">От</label>
-                <input
-                  class="catalog-form"
-                  placeholder="От"
-                  type="number"
-                  id="catalog-form"
-                  name="catalog-form"
-                  value="0"
-                />
-                <label for="catalog-form" class="visually-hidden">До</label>
-                <input
-                  class="catalog-form"
-                  placeholder="До"
-                  type="number"
-                  id="catalog-form"
-                  name="catalog-form"
-                  value="9000"
-                />
-              </form>
+                placeholder="От"
+                type="number"
+                id="catalog-form"
+                name="catalog-form"
+                value="0"
+              />
+              <label for="catalog-form" class="visually-hidden">До</label>
+              <input
+                class="catalog-form"
+                placeholder="До"
+                type="number"
+                id="catalog-form"
+                name="catalog-form"
+                value="9000"
+              />
             </fieldset>
             <button class="button" type="submit">Показать</button>
             <button class="button-reset" type="reset">Сбросить</button>
           </form>
         </div>
+        <h2 class="search-result-title">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
-          <h2>Найдено гостиниц: </h2>
-          <label>38</label>
           <option value="popular">Сначала популярное</option>
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="expensive">Сначала дорогое</option>
+          <option value="min-price">Сначала дешёвое</option>
+          <option value="max-price">Сначала дорогое</option>
         </select>
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать список</span>
-        </a>
-        <a class="button" href="#">
+        <div class="sort-by"><a href="catalog.html?view=tile" class="button button-light">
           <span class="visually-hidden">Показать карточки</span>
         </a>
+        <a class="button" href="catalog.html?view=card">
+          <span class="visually-hidden">Показать карточки с описанием</span>
+        </a><a class="button" href="catalog.html?view=list">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+        </div>
         <!-- откорректировать под макет -->
         <ul class="product-list">
           <li class="product-card">
@@ -199,8 +198,8 @@
             </a>
             <p>Гостиница</p>
             <b class="product-card-price">От 4000 ₽</b>
-            <a class="product-card-button button" href="#">Подробнеее</a>
-            <a class="product-card-button button" href="#">Купить</a>
+            <a class="show more" href="#">Подробнеее</a>
+            <button class="favorite" href="#">Избранное</button>
             <p>Звезды</p>
             <p>Рейтинг: 8,5</p>
           </li>
@@ -217,8 +216,8 @@
             </a>
             <p>Гостиница</p>
             <b class="product-card-price">От 5000 ₽</b>
-            <a class="product-card-button button" href="#">Подробнеее</a>
-            <a class="product-card-button button" href="#">Купить</a>
+            <a class="show more" href="#">Подробнеее</a>
+            <button class="favorite" href="#">Избранное</button>
             <p>Звезды</p>
             <p>Рейтинг: 9,2</p>
           </li>
@@ -235,8 +234,8 @@
             </a>
             <p>Гостиница</p>
             <b class="product-card-price">От 2500 ₽</b>
-            <a class="product-card-button button" href="#">Подробнеее</a>
-            <a class="product-card-button button" href="#">Купить</a>
+            <a class="show more" href="#">Подробнеее</a>
+            <button class="favorite" href="#">Избранное</button>
             <p>Звезды</p>
             <p>Рейтинг: 6,9</p>
           </li>
@@ -253,8 +252,8 @@
             </a>
             <p>Гостиница</p>
             <b class="product-card-price">От 1500 ₽</b>
-            <a class="product-card-button button" href="#">Подробнеее</a>
-            <a class="product-card-button button" href="#">Купить</a>
+            <a class="show more" href="#">Подробнеее</a>
+            <button class="favorite" href="#">Избранное</button>
             <p>Звезды</p>
             <p>Рейтинг: 5,0</p>
           </li>
@@ -279,7 +278,10 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">5</a>
+            <span class="pagination-link">...</span>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link pagination-next" href="#">
