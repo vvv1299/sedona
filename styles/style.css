@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/some-font.woff2") format("woff2");
+  font-display: swap;
+}
+
 .page-index-head {
   background-image: url(../images/welcome_to_sedona.jpg);
 }

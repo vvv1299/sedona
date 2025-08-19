@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header-logo-link" href="index.html"
+      <a class="page-header-logo-link" href="index.html" aria-current="page"
         ><img
           class="page-header-logo"
           src="images/logo.svg"
@@ -19,7 +19,10 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="index.html"
+            <a
+              class="navigation-link navigation-link-current"
+              href="index.html"
+              aria-current="page"
               >Главная</a
             >
           </li>
@@ -40,7 +43,8 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#"
-              ><span class="visually-hidden">Избранное</span></a
+              ><span class="visually-hidden">Отелей в избранном</span>
+              <span class="count">12</span></a
             >
           </li>
           <li class="navigation-item">
@@ -100,9 +104,9 @@
           </li>
         </ul>
       </section>
-      <p>Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-      <p>Опытный персонал и качественное обслуживание!</p>
-      <section class="advantages">
+      <section class="services">
+        <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <p>Опытный персонал и качественное обслуживание!</p>
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
@@ -129,15 +133,12 @@
         </ul>
       </section>
       <section class="hidden-hostels">
-        <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <p>Заинтересовались?</p>
+        <h2>Заинтересовались?</h2>
         <p>
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
-        <a class="button button-advantages" href="#"
-          >ПОИСК ГОСТИНИЦЫ В седоне</a
-        >
+        <button class="button" type="button">Поиск гостиницы в Седоне</button>
       </section>
       <section class="subscribe">
         <h2>Подпишитесь на рассылку</h2>
@@ -149,21 +150,24 @@
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <p class="appointment-form-email">
-            <!--<label for="appointment-email"  class="visually-hidden"> E-mail </label>-->
-            <input
-              type="text"
-              id="appointment-email"
-              name="appointment-email"
-              placeholder="example@example.ru"
-            />
-          </p>
+          <label for="appointment-email" class="visually-hidden">
+            E-mail
+          </label>
+          <input
+            class="appointment-form"
+            placeholder="example@example.ru"
+            type="email"
+            id="appointment-email"
+            name="appointment-email"
+            required
+          />
           <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
       <section class="footer-social">
+        <h2 class="visually-hidden">Соцсети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="#">
@@ -190,7 +194,7 @@
       </address>
       <a
         class="page-footer-logo-link"
-        href="https://htmlacademy.ru/frontender-diy"
+        href="https://htmlacademy.ru/intensive/htmlcss"
         ><img
           class="page-footer-logo"
           src="images/logo-HTML.svg"

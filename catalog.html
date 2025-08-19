@@ -27,7 +27,9 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html" aria-current="page"
+              >Гостиницы</a
+            >
           </li>
         </ul>
       </nav>
@@ -54,7 +56,12 @@
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
+            <a
+              class="breadcrumbs-link"
+              href="index.html"
+              class="visually-hidden"
+              >Главная</a
+            >
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -104,7 +111,7 @@
                       class="control-input"
                       type="radio"
                       name="product-group"
-                      value="shaving-supplies"
+                      value="hostel"
                       checked
                     />
                     Гостиница
@@ -116,7 +123,7 @@
                       class="control-input"
                       type="radio"
                       name="product-group"
-                      value="care-products"
+                      value="motel"
                     />
                     Мотель
                   </label>
@@ -127,17 +134,46 @@
                       class="control-input"
                       type="radio"
                       name="product-group"
-                      value="accessories"
+                      value="appartament"
                     />
                     Аппартаменты
                   </label>
                 </li>
               </ul>
             </fieldset>
+
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <form
+                class="catalog-form"
+              >
+                <label for="catalog-form" class="visually-hidden">От</label>
+                <input
+                  class="catalog-form"
+                  placeholder="От"
+                  type="number"
+                  id="catalog-form"
+                  name="catalog-form"
+                  value="0"
+                />
+                <label for="catalog-form" class="visually-hidden">До</label>
+                <input
+                  class="catalog-form"
+                  placeholder="До"
+                  type="number"
+                  id="catalog-form"
+                  name="catalog-form"
+                  value="9000"
+                />
+              </form>
+            </fieldset>
             <button class="button" type="submit">Показать</button>
+            <button class="button-reset" type="reset">Сбросить</button>
           </form>
         </div>
         <select class="select-control" aria-label="Сортировка">
+          <h2>Найдено гостиниц: </h2>
+          <label>38</label>
           <option value="popular">Сначала популярное</option>
           <option value="cheap">Сначала дешёвое</option>
           <option value="expensive">Сначала дорогое</option>
@@ -306,7 +342,7 @@
       </address>
       <a
         class="page-footer-logo-link"
-        href="https://htmlacademy.ru/frontender-diy"
+        href="https://htmlacademy.ru/intensive/htmlcss"
         ><img
           class="page-footer-logo"
           src="images/logo-HTML.svg"
