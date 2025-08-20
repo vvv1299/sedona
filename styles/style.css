@@ -109,6 +109,11 @@ h2 {
 
 .advantages-item-color {
   background-color: #82b3d3;
+  width: 400px;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-top: 103px;
+  padding-bottom: 103px;
 }
 
 .advantages-item-grey {
