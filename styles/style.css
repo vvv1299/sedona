@@ -38,7 +38,14 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -61,6 +68,11 @@ body {
 
 .button-hiden {
   background-color: #756157;
+  width: 160px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .button-subscribe,
@@ -72,6 +84,31 @@ h2 {
   text-transform: uppercase;
 }
 
+.navigation {
+  display: flex;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 430px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 250px;
+  margin-left: auto;
+}
+
+.page-container {
+  margin: 0 auto;
+}
+
+.page-index-head {
+  display: block;
+  margin: 0 auto;
+}
+
 .navigation-link {
   font-family: "PT Sans Narrow", sans-serif;
   line-height: 20px;
@@ -79,6 +116,10 @@ h2 {
   color: inherit;
   text-align: center;
   text-decoration: none;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .page-index {
@@ -98,8 +139,8 @@ h2 {
   background-size: cover;
 }
 
-.advantages-list {
-  text-align: center;
+.advantages-list-three {
+  display: flex;
 }
 
 .advantages-title {
@@ -111,7 +152,7 @@ h2 {
 
 .advantages-item-color {
   background-color: #82b3d3;
-  width: 400px;
+  width: 465px;
   padding-left: 85px;
   padding-right: 85px;
   padding-top: 103px;
@@ -120,7 +161,7 @@ h2 {
 
 .advantages-item-grey {
   background-color: rgba(130.52, 179.31, 211.18, 0.12);
-  width: 400px;
+  width: 465px;
   padding-left: 85px;
   padding-right: 85px;
   padding-top: 103px;
@@ -129,7 +170,7 @@ h2 {
 
 .advantages-item-darckgrey {
   background-color: rgba(130.52, 179.31, 211.18, 0.2);
-  width: 400px;
+  width: 465px;
   padding-left: 85px;
   padding-right: 85px;
   padding-top: 103px;
@@ -203,4 +244,48 @@ h2 {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.pagination-link {
+  background: #82b3d3;
+  color: white;
+  text-decoration: none;
+  display: grid;
+  width: 60px;
+  height: 60px;
+  place-items: center;
+}
+
+.pagination-current {
+  background: #f2f2f2;
+  color: black;
+}
+
+.page-footer-container {
+  display: flex;
+  margin: 0 auto;
+  place-items: center;
+}
+
+.footer-social {
+  width: 200px;
+  margin-right: 130px;
+}
+
+.page-footer-logo-link{
+  margin-left: auto;
+  max-width: 190px;
+}
+
+.catalog-products {
+  display: flex;
+}
+
+.catalog-filter {
+  width: 220px;
+  margin-right: 20px;
+}
+
+.catalog-up-column{
+width: 700px;
 }
